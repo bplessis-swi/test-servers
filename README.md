@@ -7,15 +7,22 @@ Both servers reply on the incoming request with a timestamped message.
 
 Usage:
 
-  udp -port 33033
-  
-  udp -host 127.0.0.1 -port 33033
-  
+``` sh
+$ udp -port 33033
+```
+
+``` sh
+$ udp -host 127.0.0.1 -port 33033
+```
   
 # TCP
 
 Usage:
 
-  tcp -port 33033
+``` sh
+$ tcp -port 33033
+```
   
-  tcp -host 127.0.0.1 -port 33033
+``` sh
+$ tcp -host 127.0.0.1 -port 33033
+```
