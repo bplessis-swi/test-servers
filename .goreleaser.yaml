@@ -10,7 +10,7 @@ builds:
   -
     id: udp
     binary: udp
-    main: cmd/udp/main.go
+    dir: cmd/udp/
     env:
       - CGO_ENABLED=0
     goos:
@@ -22,7 +22,7 @@ builds:
   -
     id: tcp
     binary: tcp
-    main: cmd/tcp/main.go
+    dir: cmd/tcp/
     env:
       - CGO_ENABLED=0
     goos:
@@ -34,7 +34,7 @@ builds:
 archives:
   -
     format: binary
-    name_template: "{{ .ProjectName }}-{{ .Os }}-{{ .Arch }}"
+    name_template: "{{ .Binary }}-{{ .Os }}-{{ .Arch }}"
 checksum:
   name_template: 'checksums.txt'
 snapshot:
